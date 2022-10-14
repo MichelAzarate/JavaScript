@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos</title>
+    <style>
+        #dv1{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="dv1" onmouseover="mudaCor(this,'#f00')" onmouseout="mudaCor(this,'#fff')">
+
+    </div>
+    <button onclick="" onmouseover="mudaCor(document.getElementById('dv1'),'#00f')">Clique em mim</button>
+    <script>
+        function mudaCor(obj,cor){
+            obj.style.backgroundColor=cor;
+        }
+    </script>
+</body>
+</html>
